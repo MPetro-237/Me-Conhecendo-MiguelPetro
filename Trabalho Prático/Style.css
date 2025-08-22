@@ -1,0 +1,150 @@
+/* Formatações Padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    font-size: 16px;
+    font-family: 'Roboto', 'Open Sans', Arial;
+}
+
+/* Cabeçalho */
+#cabeçalho,#menu{
+    background-color: rgb(39, 34, 105);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    height: 100px;
+}
+#cabeçalho{
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 0px auto;
+}
+#menu{
+    flex: 1 1 70%;
+    align-content: center;
+    justify-items: right;
+}
+ul{
+    list-style-type: none ;
+    justify-content: center;
+}
+li{
+    float: left;
+}
+
+.menul{
+    text-decoration: none; 
+    padding: 20px;
+    margin: 5px;
+    border: 3px solid white;
+    border-radius: 15%;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    background-color: white;
+    color: rgb(39, 34, 105);
+}
+
+/*Base Principal*/
+main{
+    flex: 1 1 100%;
+    height: calc(100vh - 250px);
+    padding: 100px 155px 5px 155px;
+    background-image: url(Imagens/4940019.jpg);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    text-align: justify;
+}
+/*Principal Home*/
+#principalhome{
+    flex: 1 1 100%;
+    font-size: 30px;
+    text-align: justify;
+}
+.bigtxt{
+    font-size: 60px;
+}
+.info{
+    font-size: 14px;
+    bottom: auto;
+}
+
+/*Principal SobreMim*/
+.principalSobreMim{
+    display: flex;
+    padding: 100px 100px 5px 100px;
+    font-size: 25px;
+}
+principalSobreMim #foto{
+    flex: 0 1 35%;
+}
+principalSobreMim #quemsoueu{
+    flex: 1 1 65%;
+    font-size: 30px;
+}
+
+/*Principal Formações*/
+#formacao{
+    font-size: 20px;
+}
+
+/*Principal Portifolio*/
+#portifolio{
+    font-size: 20px;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex: 1 1 100vw;
+    background-color:  rgb(31, 30, 44);
+    height:150px;
+    padding: 30px 20px;
+    color: white;
+    font-size: 13px;
+}
+#creditos{
+    flex: 0 1 50%;
+}
+.creimg{
+    color: white;
+    text-decoration: none;
+}
+#contatorapi{
+    flex: 1 1 50%;
+    
+}
+
+/*Adaptabilidade*/
+
+@media only screen and (max-width: 1112px){
+    #cabeçalho, #menu{
+        height: 150px;
+    }
+    #cabeçalho{
+        padding: 40px;
+    }
+    #menu{
+        justify-items: center;
+    }
+    .principal{
+        height: calc(100vh - 300px);
+    }
+}
+
+@media only screen and (max-width: 896px){
+    #cabeçalho{
+    flex: 1 1 25%;
+    padding: 55px;
+}
+    #menu{
+    flex: 1 1 75%;
+}
+}
